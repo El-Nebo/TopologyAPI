@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git repository"
+    "url": "https://github.com/El-Nebo/TopologyAPI"
   },
   "keywords": [
     "API",
@@ -18,7 +18,7 @@
   ],
   "author": "Mohamed Nabawe",
   "license": "ISC",
-  "homepage": "https://github.com/owner/project#readme",
+  "homepage": "https://github.com/El-Nebo/TopologyAPI/blob/main/README.md",
   "devDependencies": {
     "jest": "^27.4.5"
   }
