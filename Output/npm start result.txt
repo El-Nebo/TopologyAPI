@@ -1,0 +1,265 @@
+Query Topologies
+[
+    {
+        "id": "top1",
+        "components": [
+            {
+                "type": "resistor",
+                "id": "res1",
+                "resistance": {
+                    "default": 100,
+                    "min": 10,
+                    "max": 1000
+                },
+                "netlist": {
+                    "t1": "vdd",
+                    "t2": "n1"
+                }
+            },
+            {
+                "type": "nmos",
+                "id": "m1",
+                "m(l)": {
+                    "deafult": 1.5,
+                    "min": 1,
+                    "max": 2
+                },
+                "netlist": {
+                    "drain": "n1",
+                    "gate": "vin",
+                    "source": "vss"
+                }
+            }
+        ]
+    },
+    {
+        "id": "top2",
+        "components": [
+            {
+                "type": "capacitor",
+                "id": "cap1",
+                "capacitance": {
+                    "default": 150,
+                    "min": 50,
+                    "max": 3000
+                },
+                "netlist": {
+                    "t1": "vdd",
+                    "t2": "n3"
+                }
+            },
+            {
+                "type": "pmos",
+                "id": "m2",
+                "m(l)": {
+                    "deafult": 1.5,
+                    "min": 1,
+                    "max": 2
+                },
+                "netlist": {
+                    "drain": "n3",
+                    "gate": "vin",
+                    "source": "vss"
+                }
+            }
+        ]
+    }
+]
+--------------------------------------------
+Topology1 Devices
+[
+    {
+        "type": "resistor",
+        "id": "res1",
+        "resistance": {
+            "default": 100,
+            "min": 10,
+            "max": 1000
+        },
+        "netlist": {
+            "t1": "vdd",
+            "t2": "n1"
+        }
+    },
+    {
+        "type": "nmos",
+        "id": "m1",
+        "m(l)": {
+            "deafult": 1.5,
+            "min": 1,
+            "max": 2
+        },
+        "netlist": {
+            "drain": "n1",
+            "gate": "vin",
+            "source": "vss"
+        }
+    }
+]
+--------------------------------------------
+Topology2 Devices
+[
+    {
+        "type": "capacitor",
+        "id": "cap1",
+        "capacitance": {
+            "default": 150,
+            "min": 50,
+            "max": 3000
+        },
+        "netlist": {
+            "t1": "vdd",
+            "t2": "n3"
+        }
+    },
+    {
+        "type": "pmos",
+        "id": "m2",
+        "m(l)": {
+            "deafult": 1.5,
+            "min": 1,
+            "max": 2
+        },
+        "netlist": {
+            "drain": "n3",
+            "gate": "vin",
+            "source": "vss"
+        }
+    }
+]
+--------------------------------------------
+Topology1 Devices connected to vdd
+[
+    {
+        "type": "resistor",
+        "id": "res1",
+        "resistance": {
+            "default": 100,
+            "min": 10,
+            "max": 1000
+        },
+        "netlist": {
+            "t1": "vdd",
+            "t2": "n1"
+        }
+    }
+]
+--------------------------------------------
+Topology1 Devices connected to n1
+[
+    {
+        "type": "resistor",
+        "id": "res1",
+        "resistance": {
+            "default": 100,
+            "min": 10,
+            "max": 1000
+        },
+        "netlist": {
+            "t1": "vdd",
+            "t2": "n1"
+        }
+    },
+    {
+        "type": "nmos",
+        "id": "m1",
+        "m(l)": {
+            "deafult": 1.5,
+            "min": 1,
+            "max": 2
+        },
+        "netlist": {
+            "drain": "n1",
+            "gate": "vin",
+            "source": "vss"
+        }
+    }
+]
+--------------------------------------------
+Topology1 Devices connected to n3 -> should be none
+[]
+--------------------------------------------
+Topology2 Devices connected to vdd
+[
+    {
+        "type": "capacitor",
+        "id": "cap1",
+        "capacitance": {
+            "default": 150,
+            "min": 50,
+            "max": 3000
+        },
+        "netlist": {
+            "t1": "vdd",
+            "t2": "n3"
+        }
+    }
+]
+--------------------------------------------
+Topology2 Devices connected to n3
+[
+    {
+        "type": "capacitor",
+        "id": "cap1",
+        "capacitance": {
+            "default": 150,
+            "min": 50,
+            "max": 3000
+        },
+        "netlist": {
+            "t1": "vdd",
+            "t2": "n3"
+        }
+    },
+    {
+        "type": "pmos",
+        "id": "m2",
+        "m(l)": {
+            "deafult": 1.5,
+            "min": 1,
+            "max": 2
+        },
+        "netlist": {
+            "drain": "n3",
+            "gate": "vin",
+            "source": "vss"
+        }
+    }
+]
+--------------------------------------------
+Query Topologies
+[
+    {
+        "id": "top2",
+        "components": [
+            {
+                "type": "capacitor",
+                "id": "cap1",
+                "capacitance": {
+                    "default": 150,
+                    "min": 50,
+                    "max": 3000
+                },
+                "netlist": {
+                    "t1": "vdd",
+                    "t2": "n3"
+                }
+            },
+            {
+                "type": "pmos",
+                "id": "m2",
+                "m(l)": {
+                    "deafult": 1.5,
+                    "min": 1,
+                    "max": 2
+                },
+                "netlist": {
+                    "drain": "n3",
+                    "gate": "vin",
+                    "source": "vss"
+                }
+            }
+        ]
+    }
+]
+--------------------------------------------
