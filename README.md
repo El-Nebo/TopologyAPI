@@ -1,6 +1,19 @@
 # TopologyAPI
 
-Topology 
+TopologyAPI is an api which deals with topologies and can execute following function:
+* Read a topology from a given JSON file and store it in the memory.
+
+* Write a given topology from the memory to a JSON file.
+
+* Query about which topologies are currently in the memory.
+
+* Delete a given topology from memory.
+
+* Query about which devices are in a given topology.
+
+* Query about which devices are connected to a given netlist node in a given topology.
+
+API is implemented in javascript as it is an object oriented programming languate and it can easily deal with JSON files.
 
 ## Prerequisites 
 nodejs and npm are needed to be installed.
