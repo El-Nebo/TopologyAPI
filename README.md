@@ -16,7 +16,11 @@ TopologyAPI is an api which deals with topologies and can execute following func
 API is implemented in javascript as it is an object oriented programming languate and it can easily deal with JSON files.
 
 ## Prerequisites 
-nodejs and npm are needed to be installed.
+nodejs and npm are needed to be installed. After that, run command:
+```
+npm install
+```
+to install needed libraries
 
 ## How to Run
 run command:
