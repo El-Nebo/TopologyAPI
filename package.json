@@ -1,0 +1,25 @@
+{
+  "name": "topology",
+  "version": "1.0.0",
+  "description": "Topology API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git repository"
+  },
+  "keywords": [
+    "API",
+    "Topology",
+    "Component"
+  ],
+  "author": "Mohamed Nabawe",
+  "license": "ISC",
+  "homepage": "https://github.com/owner/project#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}

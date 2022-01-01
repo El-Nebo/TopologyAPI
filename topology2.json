@@ -1,0 +1,32 @@
+{
+    "id": "top2",
+    "components": [
+        {
+            "type": "capacitor",
+            "id": "cap1",
+            "capacitance": {
+                "default": 150,
+                "min": 50,
+                "max": 3000
+            },
+            "netlist": {
+                "t1": "vdd",
+                "t2": "n3"
+            }
+        },
+        {
+            "type": "pmos",
+            "id": "m2",
+            "m(l)": {
+                "deafult": 1.5,
+                "min": 1,
+                "max": 2
+            },
+            "netlist": {
+                "drain": "n3",
+                "gate": "vin",
+                "source": "vss"
+            }
+        }
+    ]
+}
